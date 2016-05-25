@@ -20,7 +20,7 @@ This article describes only those tasks are related to keys and certificates. Fo
 In order for the IDP to validate the signature of each SAML authentication request sent by Auth0, the public key and the certificate have to be provided.
 
 1. Open the Auth0 dashboard and navigate to [Connections > Enterprise](${uiURL}/#/connections/enterprise). Click on the __SAMLP Identity Provider__.
-2. Click on the __Settings__ (gear) icon for your SAMLP connection.
+2. Click on the __Setup__ (pencil) icon for your SAMLP connection.
 3. Turn on the toggle for __Sign Request__.
 4. Select the __Sign Request Algorithm__ and the __Sign Request Digest Algorithm__ acceptable to your IDP.
 
