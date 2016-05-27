@@ -1,7 +1,3 @@
----
-url: /saml/auth0-as-sp
----
-
 ## Auth0 as Service Provider (SAML connection)
 
 When you use Auth0 as Service Provider there are some tasks that you may need to perform, with regards to keys:
@@ -30,7 +26,7 @@ In order for the IDP to validate the signature of each SAML authentication reque
 6. Download your certificate, using the link in the text below the __Sign Request__ toggle.
 7. Give the downloaded certificate to the IDP, for use in validating the signed authentication request.
 
-![](media/articles/public-key-cryptography/sp-download-cert.png)
+![](media/articles/crypto/sp-download-cert.png)
 
 ### Upload public key/certificate from IDP
 
@@ -41,7 +37,7 @@ In order for Auth0 to validate the signed authentication responses coming from t
 3. Click on the __Settings__ (gear) icon for your SAMLP connection.
 4. Use the __UPLOAD CERTIFICATE__ button to upload the certificate file from IDP.
 
-![](media/articles/public-key-cryptography/sp-upload-cert.png)
+![](media/articles/crypto/sp-upload-cert.png)
 
 ### Download public key/certificate for IDP to encrypt assertions
 
@@ -51,7 +47,7 @@ Optionally, assertions can be encrypted. In order for the IDP to make the releva
 2. Click on the __Settings__ (gear) icon for your SAMLP connection.
 3. Under __Encrypted Assertions__, use the links for CER, PEM or PKCS#7 to download a public key/certificate in the format needed for your IDP.
 
-![](media/articles/public-key-cryptography/sp-encrypted-assertions.png)
+![](media/articles/crypto/sp-encrypted-assertions.png)
 
 ### Upload a custom keypair, private key, or certificate via the Management API
 
@@ -71,21 +67,21 @@ To update via the Management APIv2 explorer:
 2. Using the same browser, navigate to [Management APIv2](https://auth0.com/docs/api/v2)
 3. Under __SCOPES__, select the _read: connections_, by selecting _connections_ at the __entity__ dropdown, and _read_ at the __actions__ dropdown. Click the arrow pointing to the right to add the scope.
 
-	![](media/articles/public-key-cryptography/mgmt-api-scope-read-conn.png)
+	![](media/articles/crypto/mgmt-api-scope-read-conn.png)
 
 4. Select the _update: connections_, by selecting the _update_ value at the __actions__ dropdown and clicking once more the arrow pointing to the right.
 
-	![](media/articles/public-key-cryptography/mgmt-api-scope-update-conn.png)
+	![](media/articles/crypto/mgmt-api-scope-update-conn.png)
 
 5. On the __API REFERENCE__ menu on the left, select [Connections > Get all connections](/api/v2#!/Connections/get_connections)
 
 6. Scroll down to the _Test this endpoint_ section and click the __TRY__ button.
 
-	![](media/articles/public-key-cryptography/mgmt-api-get-conn-try.png)
+	![](media/articles/crypto/mgmt-api-get-conn-try.png)
 
 7. The __RESPONSE BODY__ contains all your configured connections. Locate the connection you wish to update and copy the connection ID. This is in the _id_ field and is of the form "**con_**_<alphanumeric>_"
 
-	![](media/articles/public-key-cryptography/mgmt-api-get-conn-id.png)
+	![](media/articles/crypto/mgmt-api-get-conn-id.png)
 
 8. On the __API REFERENCE__ menu on the left, select [Connections > Get a connection](/api/v2#!/Connections/get_connections_by_id)
 

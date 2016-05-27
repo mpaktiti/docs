@@ -15,14 +15,14 @@ This is the electronic equivalent of a handwritten signature. When the sender in
 
 For a digital signature, the sender signs the message with the private key and the recipient validates the signature with the public key. Only the holder of the private key can sign the message.
 
-![](media/articles/public-key-cryptography/signing-messages.png)
+![](media/articles/crypto/signing-messages.png)
 
 ### Encryption of messages
 A sender can encrypt a message when sending it. This converts the message from a readable format, known as clear text (or plain text), to an encoded format, known as ciphertext. The recipient can decode the message upon receipt to convert it back to its earlier, readable format. This prevents the message from being read enroute.
 
 For encrypted messages, the sender encodes the message using the intended recipient’s public key and the recipient then decodes the message using its private key. Only the holder of the private key can decode and view the message.
 
-![](media/articles/public-key-cryptography/encrypting-messages.png)
+![](media/articles/crypto/encrypting-messages.png)
 
 ---
 
@@ -39,9 +39,9 @@ There are, however, a set of tasks you may need to perform, according to the sce
 
 | Technology  | Case |
 | ----------  | ---- |
-| SAML        | [Auth0 as Service Provider (SAML connection)](/saml/auth0-as-sp) |
-| SAML        | [Auth0 as Identity Provider (Application with SAML Addon)](/saml/auth0-as-idp) |
-| WS-Fed/ADFS | [WS-Fed - ADFS Connection](/wsfed-adfs) |
-| WS-Fed/ADFS | [WS-Fed Addon](/wsfed-addon) |
-| JWT         | [JWT Signing](/jwt-sign) |
-| JWT         | [JWT Validation](/jwt-validate) |
+| SAML        | [Auth0 as Service Provider (SAML connection)](/crypto/auth0-as-sp) |
+| SAML        | [Auth0 as Identity Provider (Application with SAML Addon)](/crypto/auth0-as-idp) |
+| WS-Fed/ADFS | [WS-Fed - ADFS Connection](/crypto/wsfed-adfs) |
+| WS-Fed/ADFS | [WS-Fed Addon](/crypto/wsfed-addon) |
+| JWT         | [JWT Signing](/crypto/jwt-sign) |
+| JWT         | [JWT Validation](/crypto/jwt-validate) |

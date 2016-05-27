@@ -1,7 +1,3 @@
----
-url: /saml/auth0-as-idp
----
-
 ## Auth0 as Identity Provider (Application with SAML Addon)
 
 When you use Auth0 as Identity Provide (IDP) there are some tasks that you may need to perform, with regards to keys:
@@ -12,5 +8,5 @@ When you use Auth0 as Identity Provide (IDP) there are some tasks that you may n
 + Updating certificates
 
 ::: panel-info More information on Auth0 as an IDP
-This article describes only those tasks are related to keys and certificates. For detailed information on how to configure Auth0 as an IDP, please refer to the document [Auth0 as Identity Provider](/saml-idp-generic).
+This article describes only those tasks are related to keys and certificates. For detailed information on how to configure Auth0 as an IDP, please refer to the document [Auth0 as Identity Provider](/crypto/saml-idp-generic).
 :::
