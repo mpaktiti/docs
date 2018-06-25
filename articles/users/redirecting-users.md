@@ -1,6 +1,6 @@
 ---
 title: Redirect Users After Login
-description: How to redirect users to URLs that have not been whitelisted
+description: How to redirect users after authentication to URLs that have not been whitelisted
 topics:
   - users
   - user-management
